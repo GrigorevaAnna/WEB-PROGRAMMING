@@ -16,3 +16,6 @@ echo "\nYour order is: $very_bad_unclear_name.";
 
 $first_number = 19;
 echo "\n$first_number";
+
+$second_number = 19.5;
+echo $second_number;
