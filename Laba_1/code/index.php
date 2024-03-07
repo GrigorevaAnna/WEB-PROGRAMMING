@@ -22,3 +22,8 @@ echo $second_number;
 
 echo "\n";
 echo 19 - 7;
+
+$last_month = 1187.23;
+$this_month = 1089.98;
+$difference = $last_month - $this_month;
+echo "\n$difference";
