@@ -38,3 +38,9 @@ $days = $months * 16;
 
 $days_per_language = $days / $num_languages;
 echo "\n$days_per_language";
+
+/*-------------------------------------*/
+               /*Degree*/
+
+echo "\n";
+echo 8 ** 2;
