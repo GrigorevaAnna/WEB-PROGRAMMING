@@ -92,6 +92,8 @@ foreach ($array as $k) {
 $sqrt = sqrt($sum);
 echo "\n$sqrt";
 
+/*-------------------------------------*/
+
 $sqrt = sqrt(379);
 $integer = round($sqrt);
 $tenth = round($sqrt, 1);
