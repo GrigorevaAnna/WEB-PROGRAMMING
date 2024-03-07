@@ -145,3 +145,23 @@ echo "]";
 /*-------------------------------------*/
 
 
+$a = 40;
+$array = [];
+for ($i = 1; $i <= $a; $i ++) {
+    if ($a % $i == 0) {
+        array_push($array, $i);
+    }
+}
+foreach($array as $k) echo "$k ";
+
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$count = 0;
+$sum = 0;
+while ($sum <= 10) {
+    $sum += $array[$count];
+    $count += 1;
+}
+
+echo "\n$count";
+
+/*-------------------------------------*/
