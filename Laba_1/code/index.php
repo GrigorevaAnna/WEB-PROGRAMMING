@@ -10,3 +10,9 @@ $order .= " and the same number of legs";
 // Don't change the line below
 
 echo "\nYour order is: $very_bad_unclear_name.";
+
+/*-------------------------------------*/
+          /*Numbers*/
+
+$first_number = 19;
+echo "\n$first_number";
