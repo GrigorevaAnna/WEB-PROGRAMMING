@@ -119,3 +119,14 @@ echo "\n$min";
 echo "\n$max";
 
 /*-------------------------------------*/
+
+$random_num = rand(0, 100);
+echo "\n$random_num";
+
+$array = [];
+for ($i = 0; $i < 10; $i ++) {
+    $array = rand();
+}
+echo "\n$array";
+
+/*-------------------------------------*/
