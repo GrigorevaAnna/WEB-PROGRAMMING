@@ -130,3 +130,18 @@ for ($i = 0; $i < 10; $i ++) {
 echo "\n$array";
 
 /*-------------------------------------*/
+
+$a = 4;
+$b = 12;
+$module = abs($a - $b);
+echo "\n$module";
+
+$array = [1, 2, -1, -2, 3, -3];
+$array = array_map('abs', $array);
+echo "\n[";
+foreach($array as $k) echo "$k ";
+echo "]";
+
+/*-------------------------------------*/
+
+
