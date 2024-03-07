@@ -165,3 +165,12 @@ while ($sum <= 10) {
 echo "\n$count";
 
 /*-------------------------------------*/
+              /*Function*/
+
+function printStringReturnNumber($string) {
+    echo "\n$string";
+    return 19;
+}
+
+$my_num = printStringReturnNumber("Let's print the line: ");
+echo "\n$my_num";
