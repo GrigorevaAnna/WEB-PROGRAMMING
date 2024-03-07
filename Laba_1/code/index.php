@@ -44,3 +44,15 @@ echo "\n$days_per_language";
 
 echo "\n";
 echo 8 ** 2;
+
+/*-------------------------------------*/
+        /*Assignment operators*/
+
+$my_num = 19;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo "\n$answer";
