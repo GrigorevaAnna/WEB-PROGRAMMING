@@ -56,3 +56,20 @@ $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
 echo "\n$answer";
+
+/*-------------------------------------*/
+      /*Mathematical functions*/
+
+$a = 10;
+$b = 3;
+$c = $a % $b;
+echo "\n$c";
+
+$a = 20;
+$b = 2;
+if ($a % $b == 0) {
+    echo "\nДелится";
+}
+else {
+    echo "\nДелится с остатком";
+}
