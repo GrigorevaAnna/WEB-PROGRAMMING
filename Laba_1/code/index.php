@@ -91,3 +91,20 @@ foreach ($array as $k) {
 }
 $sqrt = sqrt($sum);
 echo "\n$sqrt";
+
+$sqrt = sqrt(379);
+$integer = round($sqrt);
+$tenth = round($sqrt, 1);
+$hundredths = round($sqrt, 2);
+
+echo "\n$integer";
+echo "\n$tenth";
+echo "\n$hundredths";
+
+$sqrt = sqrt(587);
+$array = ["floor" => floor($sqrt), "ceil" => ceil($sqrt)];
+
+echo "\n{$array['floor']}";
+echo "\n{$array['ceil']}";
+
+/*-------------------------------------*/
