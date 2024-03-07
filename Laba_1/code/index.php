@@ -27,3 +27,9 @@ $last_month = 1187.23;
 $this_month = 1089.98;
 $difference = $last_month - $this_month;
 echo "\n$difference";
+
+/*-------------------------------------*/
+     /*Multiplication and division*/
+
+$num_languages = 4;
+$months = 11;
