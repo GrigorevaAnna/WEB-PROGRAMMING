@@ -19,3 +19,6 @@ echo "\n$first_number";
 
 $second_number = 19.5;
 echo $second_number;
+
+echo "\n";
+echo 19 - 7;
