@@ -12,7 +12,7 @@ if ("POST" === $_SERVER["REQUEST_METHOD"])
     $age = $_POST["age"];
     $_SESSION['age'] = $age;
 
-    header('Location: exercise_2b.php');
+    header('Location: exercise_2b.2.php');
     exit();
 }
 ?>
