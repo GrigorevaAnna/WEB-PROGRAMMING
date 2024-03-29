@@ -1,3 +1,35 @@
+<?php
+session_start();
+
+if ("POST" === $_SERVER["REQUEST_METHOD"])
+{
+    $name = $_POST["name"];
+    $_SESSION['name'] = $name;
+
+    $age = $_POST["age"];
+    $_SESSION['age'] = $age;
+
+    $salary = $_POST["salary"];
+    $_SESSION['salary'] = $salary;
+
+    $book = $_POST["book"];
+    $_SESSION['book'] = $book;
+
+    $data = [
+        'Имя' => $name,
+        'Возраст' => $age,
+        'Зарплата' => $salary,
+        'Любимая книга' => $book
+    ];
+
+    $_SESSION['data'] = $data;
+
+    header('Location: exercise_2c.php');
+    exit();
+
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
