@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+if ("POST" === $_SERVER["REQUEST_METHOD"])
+{
+    $surname = $_POST["surname"];
+    $_SESSION['surname'] = $surname;
+
+    $name = $_POST["name"];
+    $_SESSION['name'] = $name;
+
+    $age = $_POST["age"];
+    $_SESSION['age'] = $age;
+
+    header('Location: exercise_2b.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
