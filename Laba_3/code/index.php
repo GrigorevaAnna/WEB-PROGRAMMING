@@ -33,7 +33,23 @@
             <input type="submit" value="Save"><br>
         </form>
     </div>
-
+            <?php
+            $files = glob("categories/*/*.txt");
+            foreach ($files as $file)
+            {
+                $data = file($file);
+                $category = basename(dirname($file));
+                $title = basename($file, ".txt");
+                $email = $data[0];
+                $description = $data[1];
+                echo "<tr>
+                            <td>$email</td>
+                            <td>$category</td>
+                            <td>$title</td>
+                            <td>$description</td>
+                            </tr>";
+            }
+            ?>
     <div id="table">
         <table>
             <thead>
