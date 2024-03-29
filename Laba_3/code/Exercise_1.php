@@ -18,4 +18,4 @@ function degree($matches)
 }
 $result = preg_replace_callback($regexp, 'degree', $text);
 echo "Результат: {$result}\n";
-
+?>
