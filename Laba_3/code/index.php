@@ -15,9 +15,14 @@
 
             <label for="category">Category</label>
             <select name="category" required>
-
-
-  
+                <?php
+                $categories = array_filter(glob("./categories/*"), 'is_dir');
+                foreach ($categories as $category)
+                {
+                    $name_of_category = basename($category);
+                    echo "<option value=\"$name_of_category\">$name_of_category</option>";
+                }
+                ?>
             </select><br>
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title" required><br>
@@ -38,8 +43,7 @@
             <th>Description</th>
             </thead>
 
-
-
+            
         </table>
     </div>
 </body>
