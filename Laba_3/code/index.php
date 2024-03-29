@@ -33,6 +33,15 @@
             <input type="submit" value="Save"><br>
         </form>
     </div>
+    <div id="table">
+        <table>
+            <thead>
+            <th>Email</th>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Description</th>
+            </thead>
+            <tbody>
             <?php
             $files = glob("categories/*/*.txt");
             foreach ($files as $file)
@@ -50,16 +59,7 @@
                             </tr>";
             }
             ?>
-    <div id="table">
-        <table>
-            <thead>
-            <th>Email</th>
-            <th>Category</th>
-            <th>Title</th>
-            <th>Description</th>
-            </thead>
-
-            
+            </tbody>
         </table>
     </div>
 </body>
