@@ -51,14 +51,12 @@
                 $title = basename($file, ".txt");
                 $email = $data[0];
                 $description = $data[1];
-                echo "<tr>
-                            <td>$email</td>
-                            <td>$category</td>
-                            <td>$title</td>
-                            <td>$description</td>
-                            </tr>";
-            }
-            ?>
+            echo "<tr><td>$email</td>
+                      <td>$category</td>
+                      <td>$title</td>
+                      <td>$description</td></tr>";
+        }
+        ?>
             </tbody>
         </table>
     </div>
