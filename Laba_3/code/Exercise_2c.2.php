@@ -8,7 +8,7 @@ if (isset($_SESSION['data']))
     {
         echo "<li>$key: $value</li>";
     }
-    echo '</ul>';
+    echo "</ul>";
 }
 echo "<ul>";
 ?>
