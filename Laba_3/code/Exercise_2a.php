@@ -4,19 +4,19 @@ if ('POST' === $_SERVER['REQUEST_METHOD'])
     if (isset($_POST['text']))
     {
         $text = $_POST['text'];
-        $text_nonspace = str_replace(array(" "), '', $text);
-        $Count_of_characters = mb_strlen($text, 'utf-8');
-        $Count_without_spaces = mb_strlen($text_nonspace, 'utf-8');
+        $textNonspace = str_replace(array(" "), '', $text);
+        $CountOfCharacters = mb_strlen($text, 'utf-8');
+        $CountWithoutSpaces = mb_strlen($textNonspace, 'utf-8');
         if (!empty($text))
         {
             $words = preg_split('/\s+/', $text);
-            $Count_of_words = count($words);
+            $CountOfWords = count($words);
         }
-        echo "Количество символов с пробелами: {$Count_of_characters}";
+        echo "Количество символов с пробелами: {$CountOfCharacters}";
         echo "<br/>";
-        echo "Количество символов без пробелов: {$Count_without_spaces}";
+        echo "Количество символов без пробелов: {$CountWithoutSpaces}";
         echo "<br/>";
-        echo "Количество слов в тексте: {$Count_of_words}";
+        echo "Количество слов в тексте: {$CountOfWords}";
     }
 }
 ?>
