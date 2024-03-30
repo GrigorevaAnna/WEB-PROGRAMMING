@@ -17,7 +17,7 @@ $description = $_POST['description'];
 $filePath = "categories/{$category}/{$title}.txt";
 
 if (false === file_put_contents($filePath, "$email\n$description")) {
-    throw new Exception('Something went wrong.');
+    throw new Exception("Something went wrong.");
 }
 
 redirectToHome();
