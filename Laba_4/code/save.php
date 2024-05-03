@@ -22,4 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $valueRange = new Google_Service_Sheets_ValueRange(['values' => [$row]]);
     $service->spreadsheets_values->append($spreadsheetId, $range, $valueRange, ['valueInputOption' => 'USER_ENTERED']);
 
+    header('Location: index.php');
+    exit();
+}
 ?>
